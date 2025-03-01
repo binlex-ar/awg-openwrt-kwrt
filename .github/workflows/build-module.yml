@@ -12,11 +12,11 @@ jobs:
     strategy:
       matrix:
         build_env:
-          - tag: "SNAPSHOT"
-            pkgarch: aarch64_cortex-a53
-            target: mediatek
-            subtarget: mt7622
-            vermagic: "r1"
+          - tag: "23.05"
+            pkgarch: aarch64_generic
+            target: armvirt
+            subtarget: 64
+            vermagic: "66a4d9d6d6c5c5e3da2105e3833ae18b"
 
     steps:
       - uses: actions/checkout@v4
